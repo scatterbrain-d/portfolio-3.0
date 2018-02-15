@@ -1,0 +1,8 @@
+.contact {
+  height: 100vw;
+  width: 90vw;
+  background-color: green;
+  position: fixed;
+  left: 10vw;
+  transition: 1s all;
+}

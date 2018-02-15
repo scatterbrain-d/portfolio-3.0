@@ -1,0 +1,24 @@
+.projectContainer {
+  border: 1px solid yellow;
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+}
+
+.title {
+  border: 1px solid white;
+  height: 100%;
+  width: 50%;
+}
+
+.content {
+  border: 1px solid white;
+  height: 100%;
+  width: 50%;
+}
+
+.content img {
+  max-width: 200px;
+  max-height: 200px;
+}
