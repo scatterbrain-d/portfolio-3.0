@@ -7,18 +7,24 @@
 }
 
 .title {
+  display: flex;
+  flex-flow: column;
   border: 1px solid white;
   height: 100%;
   width: 50%;
+  text-align: center;
+  color: white;
 }
 
 .content {
-  border: 1px solid white;
   height: 100%;
   width: 50%;
+  padding: 5px;
+  color: white;
+  align-items: center;
 }
 
-.content img {
-  max-width: 200px;
-  max-height: 200px;
+.title img {
+  max-width: 100%;
+  max-height: auto;
 }

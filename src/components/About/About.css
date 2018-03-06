@@ -1,7 +1,12 @@
 .about {
-  height: 100vw;
-  width: 90vw;
-  background-color: red;
+  height: 100vh;
+  width: calc(100vw - 80px);
+  background-color: #203;
   position: fixed;
   transition: 1s all;
+  z-index: 5;
+}
+
+.about img {
+  max-width: 100%;
 }

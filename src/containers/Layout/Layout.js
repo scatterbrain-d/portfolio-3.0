@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import scrollToComponent from "react-scroll-to-component";
 
 import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
@@ -12,42 +13,95 @@ class Layout extends Component {
   
   state = {
     showAbout: false,
-    showContact: false
-    
+    showContact: false,
+    hideProjects: false,
+    hideTop: true
   }
   
-  //slides "About" section in and out from left 
-  aboutHandler = () => {
-    this.setState({
-      showAbout: !this.state.showAbout, 
-      showContact: false
-    });
+  componentDidMount() {
+    window.addEventListener('scroll', this.scrollListener);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scrollListener);
   }
   
-  //slides "Contact" section in and out from right
-  contactHandler = () => {
-    this.setState({
-      showContact: !this.state.showContact,
-      showAbout: false
-    });
+  tabHandler = (tab) => {
+    switch(tab) {
+      case("about"): {
+        return this.setState({
+          showAbout: !this.state.showAbout, 
+          showContact: false
+        });
+      }  
+      case("contact"): {
+        return this.setState({
+          showContact: !this.state.showContact,
+          showAbout: false
+        });
+      }
+      case("projects"): {
+        scrollToComponent(this.Projects, {align: "top"});
+        return this.setState({
+          hideProjects: true,
+          hideTop: false
+        });
+      }
+      case("top"): {
+        scrollToComponent(this.Top);
+        return this.setState({
+          hideProjects: false,
+          hideTop: true
+        });
+      }
+      default: return;
+    }
   }
   
+  scrollListener = () => {
+    if (window.pageYOffset < 20) {
+      return this.setState({
+          hideProjects: false,
+          hideTop: true
+        });  
+    } else {
+      this.setState({
+        hideProjects: true,
+        hideTop: false
+      });
+    }
+  }
   
   render() {
     return (
-        <div>
+        <div
+          onScroll = {this.scrollListener}
+        >
           
           {//tabs on either side for About and Contact sections
           }
           <EdgeTab
             label= "about"
             show={this.state.showAbout}
-            clicked= {this.aboutHandler}
+            clicked= {() => this.tabHandler("about")}
+            vertical= {true}
           />
           <EdgeTab
               label= "contact"
               show={this.state.showContact}
-              clicked= {this.contactHandler}
+              clicked= {() => this.tabHandler("contact")}
+              vertical = {true}
+          />
+          <EdgeTab
+              label= "projects"
+              show={this.state.hideProjects}
+              clicked= {() => this.tabHandler("projects")}
+              vertical = {false}
+          />
+          <EdgeTab
+              label= "top"
+              show={this.state.hideTop}
+              clicked= {() => this.tabHandler("top")}
+              vertical = {false}
           />
           
           {//About/Contact sections offscreen by default
@@ -62,18 +116,24 @@ class Layout extends Component {
           
           {//Hero section followed by several project sections
           }
-          <Landing/>
+          <section 
+            ref={(section) => { this.Top = section; }}
+          >
+            <Landing/>
+          </section>
           
-          {projectArray.map(project => (
-            <Project
-              key={project.title}
-              title={project.title}
-              website={project.website}
-              github={project.github}
-              body={project.body}
-            />
-          ))}
-          
+          <section ref={(section) => { this.Projects = section; }}>
+            {projectArray.map(project => (
+              <Project
+                key={project.title}
+                title={project.title}
+                website={project.website}
+                github={project.github}
+                image={project.image}
+                body={project.body}
+              />
+            ))}
+          </section>
           
         </div>
       );

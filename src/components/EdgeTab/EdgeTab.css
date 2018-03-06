@@ -1,20 +1,28 @@
 .edge {
   position: fixed;
-  height: 100%;
-  width: 40px;
   display: flex;
-  flex-flow: column;
   justify-content: center;
   color: #DDD;
   font-weight: bold;
   transition: 1s all;
+  z-index: 1;
+}
+
+.tab {
+  background-color: #203;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .edge p {
   margin: 8px 10px;
 }
 
-.about {
+.about, .contact {
+  height: 100%;
+  width: 40px;
+  flex-flow: column;
 }
 
 .contact {
@@ -22,3 +30,37 @@
   align-items: flex-end;
 }
 
+.projects, .top {
+  height: 40px;
+  width: 100%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  top: calc(100% - 40px);
+}
+
+.about .tab {
+  border-radius: 0 20px 20px 0;
+  flex-flow: column;
+}
+
+.contact .tab {
+  border-radius: 20px 0 0 20px;
+  flex-flow: column;
+}
+
+.top .tab {
+  border-radius: 0 0 20px 20px;
+  margin-top: -5px;
+  padding: 0 10px;
+}
+
+.projects .tab {
+  border-radius: 20px 20px 0 0;
+  margin-bottom: -5px;
+  padding: 0 10px;
+  align-items: flex-end;
+}

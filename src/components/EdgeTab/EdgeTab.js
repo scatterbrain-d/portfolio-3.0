@@ -12,9 +12,24 @@ const edgeTab = (props) => {
           }
     
     //component slides differently based on label
-    let slide = "translateX(90vw)";
-    if (props.label === "contact") slide = "translateX(-90vw)";
+    let slide;
+    switch (props.label) {
+      case ("about"):
+        slide = "translateX(calc(" + window.innerWidth + "px - 80px))";
+        break;
+      case ("contact"):
+        slide = "translateX(calc(-" + window.innerWidth + "px + 80px))";
+        break;
+      case ("top"):
+        slide = "translateY(-100%)";
+        break;
+      case ("projects"):
+        slide = "translateY(100%)";
+        break;
+      default: break;
+    }
     
+    console.log();
       
     return (
       <div 
@@ -22,11 +37,16 @@ const edgeTab = (props) => {
         style={{transform: props.show ? slide : "translateX(0)"}}  
       >
         <div
+          className={classes.tab}
           onClick={props.clicked}
         >  
             {labelArray.map((letter, index) => 
-              ( <p key={index}>{letter}</p>)
-            )}
+              ( <p 
+                  key={index}
+                  style ={{display: props.vertical ? "block" : "inline"}}
+                >
+                {letter}
+                </p>))}
         </div>
       </div>
     );

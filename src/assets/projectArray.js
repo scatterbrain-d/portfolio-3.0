@@ -6,12 +6,34 @@ import wok from "./images/wok.png";
 
 export const projectArray = [
     {   
-        title: "Monster Builder",
+        title: "$moola API",
         website: "",
-        github: "https://github.com/scatterbrain-d/monster-builder",
+        github: "https://github.com/scatterbrain-d/smoola-cryptocurrency",
+        image: "",
         body: (
             <div>
-                <h2>(under construction)</h2>
+                <p>
+                    $moola is a fully-functioning cryptocurrency API based on modern blockchain architecture.
+                </p>
+                <ul>
+                    <li>Written in Node.js, tested with Enzyme with encryption from crypto-js and elliptic</li>
+                    <li>Blockchain and transaction pool synced on a distributed websockets network</li>
+                    <li>Secure user wallets that determine balances from the blockchain itself</li>
+                    <li>Blockchain mining with cryptocurrency reward</li>
+                    <li>Mining proof of work difficulty set dynamically based on activity</li>
+                    <li>Numerous validation checks throughout the process to reject data tampering</li>
+                </ul>
+                <hr/>
+            </div>
+        )
+    },
+    {   
+        title: "D&D Monster Builder",
+        website: "",
+        github: "https://github.com/scatterbrain-d/monster-builder",
+        image: "",
+        body: (
+            <div>
                 <p>
                     Another tool for my D&D group, this app creates custom
                     monsters for use in games.
@@ -38,11 +60,13 @@ export const projectArray = [
         title: "D&D Chronicles",
         website: "https://dnd-chronicles.herokuapp.com/sessions",
         github: "https://github.com/scatterbrain-d/dnd-chronicles",
+        image: (
+            <a href="https://dnd-chronicles.herokuapp.com/sessions">
+                <img src={chronicle} alt=""/>
+            </a>
+            ),
         body: (
             <div>
-                <a href="https://dnd-chronicles.herokuapp.com/sessions">
-                    <img src={chronicle} alt=""/>
-                </a>
                 <p>
                     Designed to document an ongoing Dungeons and Dragons campaign,
                     this full stack application combines a blog template with a character
@@ -65,15 +89,16 @@ export const projectArray = [
         )
     },
     {
-        title: "",
+        title: "Lily's Farm",
         website: "http://farm.afinnell.com",
         github: "https://github.com/scatterbrain-d/lilys-farm",
+        image: (
+            <a href="http://farm.afinnell.com">
+                <img src={farm} alt=""/>
+            </a>
+            ),
         body: (
             <div>
-                <h2 id="farm-content">Lily's Farm</h2>
-                <a href="http://farm.afinnell.com">
-                    <img src={farm} alt=""/>
-                </a>
                 <p>
                     I designed this game for my two-year-old daughter.
                     Colorful animals move across the screen and react when
@@ -95,10 +120,13 @@ export const projectArray = [
         title: "Wok of the Falls",
         website: "http://wok.afinnell.com",
         github: "https://github.com/scatterbrain-d/wokofthefalls",
+        image: (
+                <a href="http://wok.afinnell.com">
+                    <img src={wok} alt=""/>
+                </a>
+            ),
         body: (
             <div>
-                <a href="http://wok.afinnell.com">
-                    <img src={wok} alt=""/></a>
                 <p>
                     I designed this website for a friend's family restaurant.
                     I worked with the client to design a site that met their
