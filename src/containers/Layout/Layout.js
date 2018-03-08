@@ -76,21 +76,6 @@ class Layout extends Component {
         <div
           onScroll = {this.scrollListener}
         >
-          
-          {//tabs on either side for About and Contact sections
-          }
-          <EdgeTab
-            label= "about"
-            show={this.state.showAbout}
-            clicked= {() => this.tabHandler("about")}
-            vertical= {true}
-          />
-          <EdgeTab
-              label= "contact"
-              show={this.state.showContact}
-              clicked= {() => this.tabHandler("contact")}
-              vertical = {true}
-          />
           <EdgeTab
               label= "projects"
               show={this.state.hideProjects}
@@ -108,10 +93,12 @@ class Layout extends Component {
           }
           <About
             show={this.state.showAbout}
+            clicked= {() => this.tabHandler("about")}
           />
           
           <Contact
             show={this.state.showContact}
+            clicked= {() => this.tabHandler("contact")}
           />
           
           {//Hero section followed by several project sections

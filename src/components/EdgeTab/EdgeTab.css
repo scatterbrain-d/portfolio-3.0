@@ -1,15 +1,15 @@
 .edge {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
-  color: #DDD;
+  color: #ccc;
   font-weight: bold;
   transition: 1s all;
   z-index: 1;
 }
 
 .tab {
-  background-color: #203;
+  background-color: #102;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,13 +20,19 @@
 }
 
 .about, .contact {
-  height: 100%;
+  height: 100vh;
   width: 40px;
   flex-flow: column;
 }
 
-.contact {
+.about {
+  top: 0;
   left: calc(100% - 40px);
+}
+
+.contact {
+  top: 0;
+  left: 0;
   align-items: flex-end;
 }
 
@@ -36,6 +42,7 @@
   flex-flow: row;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 
 .projects {

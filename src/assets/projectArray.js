@@ -29,7 +29,7 @@ export const projectArray = [
     },
     {   
         title: "D&D Monster Builder",
-        website: "",
+        website: "http://monster-builder.afinnell.com",
         github: "https://github.com/scatterbrain-d/monster-builder",
         image: "",
         body: (

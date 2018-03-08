@@ -1,8 +1,27 @@
 .hero {
   height: 100vh;
   width: 100%;
-  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero img {
+  max-height: 50%;
+}
+
+.textbox {
+  display: flex;
+  flex-flow: column;
+  color: #ccc;
+  font-family: 'Seymour One', sans-serif;
+  font-size: 150%
+}
+
+.textbox h1 {
+  margin: 10px;
+}
+
+.big {
+  font-size: 200%;
 }

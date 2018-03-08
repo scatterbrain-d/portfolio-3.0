@@ -14,12 +14,6 @@ const edgeTab = (props) => {
     //component slides differently based on label
     let slide;
     switch (props.label) {
-      case ("about"):
-        slide = "translateX(calc(" + window.innerWidth + "px - 80px))";
-        break;
-      case ("contact"):
-        slide = "translateX(calc(-" + window.innerWidth + "px + 80px))";
-        break;
       case ("top"):
         slide = "translateY(-100%)";
         break;
@@ -28,13 +22,11 @@ const edgeTab = (props) => {
         break;
       default: break;
     }
-    
-    console.log();
       
     return (
       <div 
         className={classes.edge + " " + classes[props.label]}
-        style={{transform: props.show ? slide : "translateX(0)"}}  
+        style={{transform: props.show ? slide : "translate(0, 0)"}}  
       >
         <div
           className={classes.tab}

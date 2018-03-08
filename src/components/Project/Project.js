@@ -8,7 +8,7 @@ const project = (props) => {
     
     let website = (
       <a href={props.website}>
-        <button>Website</button>
+        <button>WEBSITE</button>
       </a>
     );
     
@@ -22,12 +22,15 @@ const project = (props) => {
           {props.image}
         </div>
         
-        <div className= {classes.content}>
+        <div className={classes.content}>
           {props.body}
-          <a href={props.github}>
-            <button>Github</button>
-          </a>
-          {website}
+          <div className={classes.buttons}>
+            <a href={props.github}>
+              <button>GITHUB</button>
+            </a>
+            {website}
+          </div>
+          
         </div>
       </div>
     );
