@@ -16,19 +16,22 @@ const about = (props) => {
             <img src={iceland} alt=""/>
             <p>
                 Hello and welcome! I'm a self-taught full-stack web developer living Austin, Texas.
-                I love building apps and learning new technologies! I posses the following
-                skills:
+                I love building apps and learning new technologies! All my projects feature mobile-ready 
+                responsive design, organized, documented, dry code, and design both fun and functional. 
+                I'm proficient with the following technologies:
             </p>
-            <ul>
+            <div className={classes.bullets}>
+              <ul>
                 <li>Javascript/ES6</li>
                 <li>CSS3, Bootstrap, Semantic UI, etc.</li>
                 <li>Node.js with Express</li>
-                <li>EJS/JSX templates</li>
+              </ul>
+              <ul>
                 <li>React/Redux</li>
                 <li>MongoDB, SQL</li>
-                <li>Mobile-ready layouts with CSS grid/flexbox</li>
-                <li>Creative/artistic design</li>
-            </ul>
+                <li>Blockchain architecture</li>
+              </ul>
+            </div>
             <p>
                 Other hobbies include hiking, reading, sculpture, D&D and other tabletop games,
                 cooking, movies, and spending time with my beautiful wife and daughter!

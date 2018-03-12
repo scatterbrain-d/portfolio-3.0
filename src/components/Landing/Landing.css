@@ -1,21 +1,19 @@
 .hero {
   height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero img {
-  max-height: 50%;
+  position: relative;
 }
 
 .textbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: flex;
   flex-flow: column;
   color: #ccc;
   font-family: 'Seymour One', sans-serif;
-  font-size: 150%
+  font-size: 150%;
+  text-shadow: 2px 2px 2px black;
 }
 
 .textbox h1 {
@@ -24,4 +22,31 @@
 
 .big {
   font-size: 200%;
+}
+
+.astronaut {
+  position: absolute;
+  width: 30%;
+  top: 40%;
+  left: 10%;
+  z-index: 4;
+}
+
+.cord {
+  position: absolute;
+  width: 35%;
+  top: 15%;
+  left: 15%;
+  z-index: 3;
+  transform-origin: right 55%;
+  transform: rotate(-30deg);
+}
+
+.rocket {
+  position: absolute;
+  height: 50%;
+  top: 0%;
+  left: 45%;
+  transform: rotate(70deg);
+  z-index: 2;
 }

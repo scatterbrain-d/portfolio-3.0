@@ -5,10 +5,11 @@
   color: #ccc;
   font-weight: bold;
   transition: 1s all;
-  z-index: 1;
+  z-index: 10;
 }
 
 .tab {
+  min-width: 40px;
   background-color: #102;
   display: flex;
   justify-content: center;
@@ -52,17 +53,26 @@
 .about .tab {
   border-radius: 0 20px 20px 0;
   flex-flow: column;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
 }
 
 .contact .tab {
   border-radius: 20px 0 0 20px;
   flex-flow: column;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
 }
 
 .top .tab {
   border-radius: 0 0 20px 20px;
   margin-top: -5px;
   padding: 0 10px;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
 }
 
 .projects .tab {
@@ -70,4 +80,7 @@
   margin-bottom: -5px;
   padding: 0 10px;
   align-items: flex-end;
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+  border-top: 1px solid #333;
 }

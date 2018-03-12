@@ -3,20 +3,22 @@ import React from "react";
 import chronicle from "./images/chronicles.png";
 import farm from "./images/lilyfarm.png";
 import wok from "./images/wok.png";
+import smoola from "./images/smoola.svg";
+import builder from "./images/builder.png";
 
 export const projectArray = [
     {   
         title: "$moola API",
         website: "",
         github: "https://github.com/scatterbrain-d/smoola-cryptocurrency",
-        image: "",
+        image: <img src={smoola} alt=""/>,
         body: (
             <div>
                 <p>
                     $moola is a fully-functioning cryptocurrency API based on modern blockchain architecture.
                 </p>
                 <ul>
-                    <li>Written in Node.js, tested with Enzyme with encryption from crypto-js and elliptic</li>
+                    <li>Written in Node.js, tested with Jest, with encryption from crypto-js and elliptic</li>
                     <li>Blockchain and transaction pool synced on a distributed websockets network</li>
                     <li>Secure user wallets that determine balances from the blockchain itself</li>
                     <li>Blockchain mining with cryptocurrency reward</li>
@@ -31,12 +33,19 @@ export const projectArray = [
         title: "D&D Monster Builder",
         website: "http://monster-builder.afinnell.com",
         github: "https://github.com/scatterbrain-d/monster-builder",
-        image: "",
+        image: (
+            <a href="http://monster-builder.afinnell.com">
+                <img src={builder} alt=""/>
+            </a>
+            ),
         body: (
             <div>
                 <p>
-                    Another tool for my D&D group, this app creates custom
-                    monsters for use in games.
+                    Created as a tool for my Dungeons & Dragons group, 
+                    this app creates and saves custom monsters for use in 
+                    games. Persistent data state much as monster stats are 
+                    handled with Redux, while local UI state changes remain
+                    within the scope of React's state.
                 </p>
                 <ul>
                     <li>Single page format with React</li>
@@ -49,7 +58,7 @@ export const projectArray = [
                 </ul>
                 <p>Future updates will add:</p>
                 <ul>
-                    <li>Ability to share creations with others</li>
+                    <li>Ability to flag creations as public so others can access them</li>
                     <li>"Battle mode" for use during a game</li>
                 </ul>
                 <hr/>
@@ -68,20 +77,17 @@ export const projectArray = [
         body: (
             <div>
                 <p>
-                    Designed to document an ongoing Dungeons and Dragons campaign,
-                    this full stack application combines a blog template with a character
-                    repository. Responsive design facilitates use on mobile devices.
+                    Designed to document an ongoing Dungeons & Dragons campaign,
+                    this full stack application combines a blog format with a character
+                    gallery. Responsive design facilitates use on mobile devices.
                 </p>
                 <ul>
                     <li>Node.js back end</li>
                     <li>Express framework</li>
                     <li>RESTful routing</li>
                     <li>EJS templates</li>
-                </ul>
-                <ul>
                     <li>Two linked MongoDB databases</li>
                     <li>Bootstrap and custom css</li>
-                    <li>Responsive layout</li>
                     <li>Modular file system</li>
                 </ul>
                 <hr/>
@@ -108,6 +114,7 @@ export const projectArray = [
                 </p>
                 <ul>
                     <li>Responsive layout</li>
+                    <li>Vanilla JS</li>
                     <li>Dynamic DOM element creation</li>
                     <li>Animation with CSS</li>
                     <li>Difficulty settings</li>

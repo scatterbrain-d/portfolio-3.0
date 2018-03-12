@@ -3,7 +3,7 @@
   width: calc(100% - 40px);
   position: fixed;
   transition: 1s all;
-  z-index: 5;
+  z-index: 50;
 }
 
 .about img {
@@ -23,6 +23,7 @@
   width: calc(100% - 40px);
   color: #ccc;
   background-color: #102e;
+  text-shadow: 1px 1px 1px black;
 }
 
 .container {
@@ -32,4 +33,10 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+
+.bullets {
+  display: flex;
 }

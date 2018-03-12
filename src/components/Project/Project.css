@@ -1,40 +1,48 @@
 .projectContainer {
   width: 90%;
-  margin: auto;
   padding: 20px 10px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   margin: 80px auto;
   background-color: #203e;
   border-radius: 20px;
+  border: 1px solid #333;
+  box-shadow: 1px 1px black;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 .title {
   display: flex;
   flex-flow: column;
-  height: 100%;
-  width: 50%;
   text-align: center;
   color: #ccc;
+  padding: 10px;
 }
 
 .content {
-  height: 100%;
-  width: 50%;
-  padding: 5px;
+  padding: 10px;
   color: #ccc;
   align-items: center;
+  line-height: 1.5em;
+  max-width: 600px;
 }
 
 .title img {
-  max-width: 90%;
-  max-height: auto;
+  max-width: 400px;
   border-radius: 10px;
-  border: 2px solid #ccc;
+  border: 1px solid #333;
+  box-shadow: 1px 1px black;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .buttons a {
@@ -50,4 +58,10 @@ button {
   padding: 12px;
   color: #ccc;
   font-weight: bold;
+  box-shadow: 2px 2px black;
+}
+
+a :hover {
+  color: white;
+  border: 1px solid white;
 }
