@@ -6,7 +6,12 @@ import moon from "../../assets/images/moon.svg";
 import classes from "./Contact.css";
 
 const contact = (props) => {
+    
     return (
+      
+    // Contact page stays offscreen by default with only the edgetab showing. 
+    // Clicking tab toggles props.show, which slides the page in and out.
+      
       <div 
         className={classes.contact}
         style={{transform: props.show ? "translateX(0)" : "translateX(calc(100% - 40px))"}}

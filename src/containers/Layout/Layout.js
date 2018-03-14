@@ -11,6 +11,11 @@ import {projectArray} from "../../assets/projectArray";
 
 class Layout extends Component {
   
+  // state is used exclusively to handle navigation/page displays.
+  // showAbout/showContact toggle the side drawers open and closed.
+  // hideProjects/hideTop toggle the display of the vertical 
+  // navigation shortcuts when relevant.
+  
   state = {
     showAbout: false,
     showContact: false,
@@ -18,12 +23,16 @@ class Layout extends Component {
     hideTop: true
   }
   
+  // scrollListener is used to toggle display of top/projects tabs
+  // based on vertical screen position
+  
   componentDidMount() {
     window.addEventListener('scroll', this.scrollListener);
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.scrollListener);
   }
+  
   
   tabHandler = (tab) => {
     switch(tab) {
@@ -57,6 +66,7 @@ class Layout extends Component {
     }
   }
   
+  
   scrollListener = () => {
     if (window.pageYOffset < 20) {
       return this.setState({
@@ -71,17 +81,18 @@ class Layout extends Component {
     }
   }
   
+  
   render() {
     return (
-        <div
-          onScroll = {this.scrollListener}
-        >
+        <div onScroll = {this.scrollListener}>
+          
           <EdgeTab
               label= "projects"
               show={this.state.hideProjects}
               clicked= {() => this.tabHandler("projects")}
               vertical = {false}
           />
+          
           <EdgeTab
               label= "top"
               show={this.state.hideTop}
@@ -101,7 +112,7 @@ class Layout extends Component {
             clicked= {() => this.tabHandler("contact")}
           />
           
-          {//Hero section followed by several project sections
+          {//Landing section followed by several project sections
           }
           <section 
             ref={(section) => { this.Top = section; }}
@@ -109,7 +120,9 @@ class Layout extends Component {
             <Landing/>
           </section>
           
-          <section ref={(section) => { this.Projects = section; }}>
+          <section 
+            ref={(section) => { this.Projects = section; }}
+          >
             {projectArray.map(project => (
               <Project
                 key={project.title}

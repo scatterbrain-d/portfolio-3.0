@@ -5,6 +5,7 @@ import astronaut from "../../assets/images/astronaut.svg";
 import cord from "../../assets/images/cord.svg";
 import rocket from "../../assets/images/rocket.svg";
 
+// very simple component containing the welcome text and graphics
 
 const landing = () => {
     return (

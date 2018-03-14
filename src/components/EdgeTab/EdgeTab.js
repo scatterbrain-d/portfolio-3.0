@@ -5,13 +5,22 @@ import classes from "./EdgeTab.css";
 
 const edgeTab = (props) => {
     
-    //put label string into an array in order to use .map function in JSX
+    // edgeTab is a reusable UI component that is used to change the view.
+    // props.label and props.vertical pass information that is used to configure
+    // the position, behavior, and orientation of the tab.
+    
+    
+    // put label string into an array in order to use .map function in JSX
+    
     let labelArray = [];
     for(let letter of props.label) {
             labelArray.push(letter.toUpperCase());
           }
     
-    //component slides differently based on label
+    // component slides screen differently based on label. For a truly generic component
+    // I would use a seperate prop for this, but the extra code seemed uneccessary for
+    // a project of this scale.
+    
     let slide;
     switch (props.label) {
       case ("top"):

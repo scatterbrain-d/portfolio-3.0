@@ -5,7 +5,12 @@ import classes from "./About.css";
 import iceland from "../../assets/images/iceland.jpg";
 
 const about = (props) => {
+  
   return (
+    
+    // About page stays offscreen by default with only the edgetab showing. 
+    // Clicking tab toggles props.show, which slides the page in and out.
+    
     <div 
       className={classes.about}
       style={{transform: props.show ? "translateX(0)" : "translateX(calc(-100% + 40px))"}}
