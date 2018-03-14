@@ -39,4 +39,21 @@
 
 .bullets {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.bullets ul {
+  margin: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    font-size: 80%;
+  }
 }

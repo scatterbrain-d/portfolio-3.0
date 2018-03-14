@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="52.255276mm"
-   height="57.126354mm"
-   viewBox="0 0 52.255276 57.126354"
+   width="125.95904mm"
+   height="141.9416mm"
+   viewBox="0 0 125.95904 141.9416"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="495.09897"
-     inkscape:cy="-19.18755"
+     inkscape:cx="495.33601"
+     inkscape:cy="-18.950196"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,36 +56,34 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(3.1032799,4.0840104)">
+     transform="translate(3.1659981,88.836463)">
     <path
        sodipodi:type="star"
-       style="opacity:1;fill:#a9a9e6;fill-opacity:1;fill-rule:nonzero;stroke:#dddddd;stroke-width:0.76806927;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:normal"
+       style="opacity:1;fill:#9b9be8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:normal"
        id="path825"
        sodipodi:sides="6"
-       sodipodi:cx="23.024359"
-       sodipodi:cy="24.479166"
-       sodipodi:r1="18.179148"
-       sodipodi:r2="15.743605"
+       sodipodi:cx="59.813522"
+       sodipodi:cy="-17.86566"
+       sodipodi:r1="59.647907"
+       sodipodi:r2="51.656643"
        sodipodi:arg1="1.5707963"
        sodipodi:arg2="2.0943951"
        inkscape:flatsided="true"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="M 23.024359,42.658314 7.2807552,33.56874 l -4e-7,-18.179147 15.7436032,-9.0895747 15.743604,9.0895737 1e-6,18.179147 z"
-       inkscape:transform-center-y="-1.5474177e-006"
-       inkscape:transform-center-x="1.0285714e-006" />
+       d="M 59.813524,41.782248 8.1569202,11.958295 l -1.6e-6,-59.647907 51.6566024,-29.823955 51.656599,29.823952 1e-5,59.647908 z" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="11.339286"
-       y="31.121317"
+       style="font-style:normal;font-weight:normal;font-size:34.72530746px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-opacity:0;stroke-miterlimit:4;stroke-dasharray:none"
+       x="21.473269"
+       y="3.9279714"
        id="text817"><tspan
          sodipodi:role="line"
          id="tspan815"
-         x="11.339286"
-         y="31.121317"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.11111069px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.57777786px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1"
+         x="21.473269"
+         y="3.9279714"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:46.30025101px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.26458333;stroke:#000000;stroke-opacity:0;stroke-miterlimit:4;stroke-dasharray:none"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:74.08029175px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.26458333;stroke:#000000;stroke-opacity:0;stroke-miterlimit:4;stroke-dasharray:none"
    id="tspan821">$</tspan>m</tspan></text>
   </g>
 </svg>

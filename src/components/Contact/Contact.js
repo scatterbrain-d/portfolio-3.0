@@ -1,5 +1,7 @@
 import React from "react";
 import EdgeTab from "../EdgeTab/EdgeTab";
+import satellite from "../../assets/images/satellite.svg";
+import moon from "../../assets/images/moon.svg";
 
 import classes from "./Contact.css";
 
@@ -16,7 +18,8 @@ const contact = (props) => {
             vertical = {true}
           />
           <div className={classes.content}>
-            <div className={classes.formContainer}>
+            <img className={classes.satellite} src={satellite} alt="satellite"/>
+            <div className={classes.container}>
               <p><strong>
                   Contact me by <a href="mailto:andy.finnell@gmail.com">email</a>, 
                   or send me a message with the form below.
@@ -37,9 +40,12 @@ const contact = (props) => {
                 </div>
                     <label id="message">Message: </label>
                     <textarea name="content"></textarea>
-                <div><button type="submit">Submit</button></div>
+                <div className={classes.submit}>
+                  <button type="submit">SUBMIT</button>
+                </div>
               </form>
             </div>
+            <img className={classes.moon} src={moon} alt="moon"/>
           </div>
         </div>
       </div>

@@ -20,16 +20,33 @@
   margin: 10px;
 }
 
+.textbox p {
+  font-size: 50%;
+  margin: 0 auto;
+}
+
 .big {
   font-size: 200%;
 }
 
-.astronaut {
+.astrobox {
   position: absolute;
   width: 30%;
-  top: 40%;
+  top: 20%;
   left: 10%;
   z-index: 4;
+  animation-name: wiggle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.astronaut {
+  width: 100%;
+  animation-name: wobble;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .cord {
@@ -37,9 +54,13 @@
   width: 35%;
   top: 15%;
   left: 15%;
-  z-index: 3;
+  z-index: 2;
   transform-origin: right 55%;
-  transform: rotate(-30deg);
+  
+  animation-name: tether;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .rocket {
@@ -47,6 +68,98 @@
   height: 50%;
   top: 0%;
   left: 45%;
-  transform: rotate(70deg);
-  z-index: 2;
+  transform: rotate(-50deg);
+  z-index: 3;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+  .textbox {
+    font-size: 100%;
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .rocket {
+    height: 30%;
+    top: 5%;
+  }
+  
+  .textbox {
+    top: 60%;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .textbox {
+    top: 50%;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(0,0);
+  }
+  20% {
+    transform: translate(5%, 1%);
+  }
+  40% {
+    transform: translate(2%, -3%);
+  }
+  60% {
+    transform: translate(-3%, 4%);
+  }
+  80% {
+    transform: translate(-6%, -2%);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-6deg);
+  }
+  60% {
+    transform: rotate(3deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes tether {
+  0% {
+    transform: rotate(-30deg);
+  }
+  20% {
+   transform: rotate(-35deg);
+  }
+  40% {
+    transform: rotate(-25deg);
+  }
+  60% {
+    transform: rotate(-35deg);
+  }
+  80% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
 }

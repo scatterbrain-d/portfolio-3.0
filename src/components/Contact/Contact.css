@@ -21,13 +21,24 @@
   color: #ccc;
   background-color: #102e;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .container {
-  width: 80%;
+  align-self: center;
+  width: 40%;
+}
+
+.satellite {
+  width: 25%;
+  align-self: flex-start;
+}
+
+.moon {
+  width: 20%;
+  align-self: flex-end;
+  margin: 2%;
 }
 
 .content label {
@@ -36,10 +47,52 @@
 }
 
 .content input, textarea {
-  width: 50%;
+  min-height: 2em;
+  width: 100%;
   margin: 2px 0;
   color: #ccc;
   background-color: transparent;
   border: none;
   box-shadow: 0 1px white;
+}
+
+.submit {
+  width: 50%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.submit button:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+hr {
+  width: 90%;
+}
+
+@media screen and (max-width: 850px) {
+  .moon {
+    display: none;
+  }
+  
+  .container {
+    margin: 20px;
+    width: 60%;
+  }
+  
+  .content {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    flex-flow: column;
+    font-size: 80%;
+  }
+  
+  .container {
+    width: 90%;
+  }
 }
