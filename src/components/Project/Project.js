@@ -23,6 +23,7 @@ const project = (props) => {
     
     return (
       <div className={classes.projectContainer}>
+        <hr/>
         <div className={classes.title}>
           <h2>{props.title}</h2>
           {props.image}

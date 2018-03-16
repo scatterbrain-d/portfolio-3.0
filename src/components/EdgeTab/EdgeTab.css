@@ -10,7 +10,8 @@
 
 .tab {
   min-width: 40px;
-  background-color: #102;
+  background-color: rgb(17, 0, 34);
+  background-color: rgba(17, 0, 34, .92);
   display: flex;
   justify-content: center;
   align-items: center;

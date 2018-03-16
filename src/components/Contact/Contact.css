@@ -19,7 +19,8 @@
   height: 100%;
   width: calc(100% - 40px);
   color: #ccc;
-  background-color: #102e;
+  background-color: rgb(17, 0, 34);
+  background-color: rgba(17, 0, 34, .92);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

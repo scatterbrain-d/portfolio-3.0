@@ -106,7 +106,7 @@ export const projectArray = [
         body: (
             <div>
                 <p>
-                    I designed this game for my two-year-old daughter.
+                    This game was designed for my two-year-old daughter.
                     Colorful animals move across the screen and react when
                     clicked or touched. Modular design allows easy addition
                     and variation to featured animals. Background and animal

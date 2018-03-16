@@ -5,10 +5,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 80px auto;
-  background-color: #203e;
-  border-radius: 20px;
-  border: 1px solid #333;
+  margin: 40px auto;
+}
+
+.projectContainer hr {
+  margin-bottom: 40px;
+  border-color: #333;
   box-shadow: 1px 1px black;
 }
 
@@ -24,6 +26,8 @@ h2 {
   text-align: center;
   color: #ccc;
   padding: 0 10px;
+  background-color: rgb(34, 0, 51);
+  background-color: rgba(34, 0, 51, .92);
 }
 
 .content {
@@ -32,6 +36,13 @@ h2 {
   align-items: center;
   line-height: 1.5em;
   max-width: 600px;
+  background-color: rgb(34, 0, 51);
+  background-color: rgba(34, 0, 51, .92);
+}
+
+.content hr {
+  border-color: #ccc;
+  margin: 10px auto;
 }
 
 .title img {
