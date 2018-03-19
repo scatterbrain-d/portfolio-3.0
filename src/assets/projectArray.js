@@ -10,7 +10,7 @@ export const projectArray = [
     {   
         title: "$moola API",
         website: "",
-        github: "https://github.com/scatterbrain-d/smoola-cryptocurrency",
+        github: "https://github.com/scatterbrain-d/smoola-blockchain",
         image: <img src={smoola} alt=""/>,
         body: (
             <div>
